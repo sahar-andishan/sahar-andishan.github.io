@@ -3,81 +3,117 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مشاور آنلاین | سحر اندیشان</title>
+  <title>مشاور آنلاین - سحر اندیشان</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Vazirmatn', sans-serif;
-      background-color: #f4faff;
       margin: 0;
       padding: 0;
-      direction: rtl;
+      font-family: 'Vazirmatn', sans-serif;
+      background: #f9f9fc;
+      color: #333;
     }
     header {
-      background-color: #0077cc;
+      background: linear-gradient(to left, #667eea, #764ba2);
+      padding: 25px;
       color: white;
-      padding: 20px;
       text-align: center;
     }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
     }
-    input, textarea, button {
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #764ba2;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    h2 {
+      color: #444;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      text-align: right;
+    }
+    input, textarea {
       width: 100%;
       padding: 12px;
-      margin-top: 10px;
-      border-radius: 6px;
+      border-radius: 10px;
       border: 1px solid #ccc;
-      font-size: 16px;
+      margin-bottom: 15px;
+      font-family: 'Vazirmatn', sans-serif;
     }
     button {
-      background-color: #0077cc;
+      background-color: #764ba2;
       color: white;
       border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 16px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #005fa3;
+      background-color: #5e3d99;
     }
-    .contact-links {
-      margin-top: 20px;
-      text-align: center;
-    }
-    .contact-links a {
-      display: inline-block;
-      margin: 10px;
+    footer {
+      background-color: #222;
       color: white;
-      background: #25D366;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>مشاور آنلاین</h1>
+    <h1>مشاوره آنلاین</h1>
+    <p>فرم درخواست جلسه با مشاور</p>
   </header>
 
-  <div class="container">
-    <h2>ارسال پیام به مشاور</h2>
-    <form>
-      <input type="text" placeholder="نام شما">
-      <input type="email" placeholder="ایمیل یا شماره تماس">
-      <textarea rows="4" placeholder="پیام شما"></textarea>
-      <button type="button" disabled>ارسال پیام (غیرفعال)</button>
-    </form>
+  <nav>
+    <a href="index.html">خانه</a>
+    <a href="moshaver.html">مشاور آنلاین</a>
+    <a href="about.html">درباره ما</a>
+  </nav>
 
-    <div class="contact-links">
-      <a href="https://wa.me/989939627203" target="_blank">تماس از طریق واتساپ</a>
-    </div>
-  </div>
+  <main>
+    <h2>درخواست مشاوره آنلاین</h2>
+    <p>لطفاً فرم زیر را پر کنید تا در سریع‌ترین زمان با شما تماس بگیریم.</p>
+    <form>
+      <label for="name">نام کامل:</label>
+      <input type="text" id="name" name="name" placeholder="مثلاً: محمد رضایی">
+
+      <label for="phone">شماره تماس:</label>
+      <input type="tel" id="phone" name="phone" placeholder="مثلاً: 09939627203">
+
+      <label for="desc">توضیح کوتاه در مورد مشکل یا نیاز شما:</label>
+      <textarea id="desc" name="desc" rows="4" placeholder="مثلاً: نیاز به برنامه‌ریزی برای کنکور دارم..."></textarea>
+
+      <button type="submit">ارسال درخواست</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>ارتباط با ما: 09939627203 | sahar.andishan@gmail.com</p>
+    <p>© 2025 سحر اندیشان</p>
+  </footer>
 </body>
 </html>
