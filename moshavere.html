@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>درخواست مشاوره تحصیلی</title>
+</head>
+<body style="font-family: sans-serif; direction: rtl; background-color: #f9f9f9; padding: 2rem;">
+    <section style="max-width: 600px; margin: auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; color: #333;">درخواست مشاوره تحصیلی</h2>
+        <form action="https://formspree.io/f/mqaqbqbv" method="POST">
+            <label for="name">نام کامل:</label><br>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 1rem;"><br>
+
+            <label for="phone">شماره تماس:</label><br>
+            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; margin-bottom: 1rem;"><br>
+
+            <label for="desc">توضیحات:</label><br>
+            <textarea id="desc" name="desc" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 1rem;"></textarea><br>
+
+            <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px;">
+                ارسال درخواست
+            </button>
+        </form>
+    </section>
+</body>
+</html>
