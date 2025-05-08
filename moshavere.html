@@ -8,14 +8,14 @@
   <style>
     body {
       font-family: 'Vazirmatn', sans-serif;
+      background: #f0f0f0;
       direction: rtl;
-      background: #f0f8f5;
-      margin: 0;
-      padding: 0;
+      padding: 2rem;
+      color: #333;
     }
     .container {
       max-width: 600px;
-      margin: 3rem auto;
+      margin: auto;
       background: white;
       padding: 2rem;
       border-radius: 10px;
@@ -30,23 +30,25 @@
       margin-top: 1rem;
       font-weight: bold;
     }
-    input, textarea, select {
+    input, textarea {
       width: 100%;
       padding: 0.6rem;
       margin-top: 0.5rem;
-      border-radius: 6px;
       border: 1px solid #ccc;
+      border-radius: 6px;
       font-size: 1rem;
     }
     button {
       background: #4caf50;
       color: white;
+      padding: 0.7rem 1.5rem;
       border: none;
-      padding: 0.8rem 1.5rem;
-      margin-top: 1.5rem;
-      font-size: 1rem;
       border-radius: 6px;
+      font-size: 1rem;
+      margin-top: 1.5rem;
       cursor: pointer;
+      display: block;
+      width: 100%;
     }
     button:hover {
       background: #388e3c;
@@ -55,7 +57,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>درخواست مشاوره آنلاین</h1>
+    <h1>درخواست مشاوره</h1>
     <form action="https://formspree.io/f/mqaqbqbv" method="POST">
       <label for="name">نام و نام خانوادگی</label>
       <input type="text" id="name" name="name" required>
@@ -64,22 +66,13 @@
       <input type="tel" id="phone" name="phone" required>
 
       <label for="grade">پایه تحصیلی</label>
-      <select id="grade" name="grade" required>
-        <option value="">انتخاب کنید</option>
-        <option value="هفتم">هفتم</option>
-        <option value="هشتم">هشتم</option>
-        <option value="نهم">نهم</option>
-        <option value="دهم">دهم</option>
-        <option value="یازدهم">یازدهم</option>
-        <option value="دوازدهم">دوازدهم</option>
-      </select>
+      <input type="text" id="grade" name="grade">
 
-      <label for="description">توضیحات</label>
-      <textarea id="description" name="description" rows="4"></textarea>
+      <label for="message">توضیحات بیشتر</label>
+      <textarea id="message" name="message" rows="4"></textarea>
 
-      <input type="hidden" name="_next" value="https://sahar-andishan.github.io/moshavere-thankyou.html">
-
-      <button type="submit">ارسال</button>
+      <input type="hidden" name="_redirect" value="moshavere-thankyou.html">
+      <button type="submit">ارسال درخواست</button>
     </form>
   </div>
 </body>
