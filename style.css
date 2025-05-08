@@ -1,28 +1,70 @@
 
 body {
-    font-family: sans-serif;
-    direction: rtl;
-    background: #f7f7f7;
+    font-family: 'Vazirmatn', sans-serif;
     margin: 0;
     padding: 0;
-    color: #222;
-    text-align: center;
+    direction: rtl;
+    background: #fdfdfd;
 }
-header, main, footer {
-    padding: 20px;
+
+.hero {
+    background: linear-gradient(to left, #4facfe, #00f2fe);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .logo {
-    width: 120px;
-    margin-bottom: 10px;
+    height: 50px;
 }
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background: white;
+    color: #007cf0;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #007cf0;
+    color: white;
 }
