@@ -1,0 +1,41 @@
+
+body {
+  font-family: Tahoma, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+header {
+  background: linear-gradient(to left, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+.logo {
+  width: 80px;
+  height: auto;
+}
+nav {
+  background: #2575fc;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-banner {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #e0eaff;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
